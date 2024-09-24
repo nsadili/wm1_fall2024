@@ -4,11 +4,51 @@
 <head>
     <title>My CV</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: rgb(198, 208, 217);
+        }
+
+        #heading_bio {
+            color: brown;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        .yellow_text {
+            color: yellow;
+        }
+
+        .heading_rest {
+            color: rebeccapurple;
+        }
+
+        a {
+            color: red;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: blue;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <ul> 
+    <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./skills.html">Skills</a></li>
         <li><a href="./education.html">Education&Experience</a></li>
@@ -22,21 +62,30 @@
                         alt="A profile image of me">
                 </a></td>
             <td>
-                <h1>Nuraddin SADILI</h1>
+                <h1 class="heading_rest">Nuraddin SADILI</h1>
             </td>
         </tr>
     </table>
 
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, modi mollitia suscipit velit reprehenderit quia
+        fugiat explicabo expedita aliquid repudiandae, odio saepe rem animi soluta accusamus perspiciatis? Et, sit
+        debitis.
+    </p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt dolor, amet commodi consectetur et
+        odit iste sint cumque. Sapiente dignissimos sequi dolorum fugiat aliquam a? Quo molestias, aliquid dolores iure
+        facilis consequatur suscipit cum doloribus nisi ea distinctio. Aliquid voluptate neque veritatis corporis
+        repudiandae tempore debitis nihil perspiciatis dolorum!</p>
+
     <img src="../images/cat.webp" alt="A cat image" width="200px">
     <img src="../images/cat-transparent.png" alt="A transparent cat image" width="200px">
 
+    <h1 id="heading_bio">Biography</h1>
 
-    <h1>Biography</h1>
-
-    <p>I am an instructor of CS at
+    <p class="yellow_text">I am an instructor of CS at
 
         <a href="https://www.ada.edu.az/en/schools/site" target="_blank">SITE</a>
-
         .
     </p>
 
@@ -44,7 +93,7 @@
 
     <hr>
 
-    <h1>What is new?</h1>
+    <h1 class="heading_rest yellow_text">What is new?</h1>
 
     <ul>
         <li>2024 Fall term started!
