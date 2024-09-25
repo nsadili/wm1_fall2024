@@ -1,0 +1,26 @@
+h1 {
+    color: aqua;
+    font-weight: normal;
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+.rest-heading {
+    color: rebeccapurple;
+}
+
+body {
+    background-color: grey;
+}
+
+p {
+    font-size: 20px;
+    /* font-style: italic; */
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+.skills-paragraph {
+    font-weight: 600;
+}
