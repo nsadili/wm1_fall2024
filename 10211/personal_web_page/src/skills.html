@@ -7,25 +7,100 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap"
         rel="stylesheet">
+
+    <style>
+        p {
+            border: 5px dashed yellow;
+            width: 70%;
+            padding: 10px;
+            padding-left: 20px;
+            margin: 30px auto;
+        }
+
+        .selected-text {
+            color: red;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        div {
+            background-color: aqua;
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        div.nav>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        li.nav-item {
+            display: inline-block;
+            width: 20%;
+            height: 20px;
+            /* border: 1px dotted red; */
+            margin: 0;
+            background-color: red;
+        }
+
+        li.nav-item:hover {
+            background-color: brown;
+        }
+
+
+        li.nav-item a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./skills.html">Skills</a></li>
-        <li><a href="./education.html">Education&Experience</a></li>
-        <li><a href="">Contact me</a></li>
-    </ul>
+    <div class="nav">
+        <ul>
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./skills.html">Skills</a></li>
+            <li class="nav-item"><a href="./education.html">Education&Experience</a></li>
+            <li class="nav-item"><a href="">Contact me</a></li>
+        </ul>
+    </div>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, recusandae itaque asperiores minus repudiandae,
-        enim est totam dicta blanditiis ipsa libero dignissimos soluta quae consequuntur quam iure inventore. Tempora
-        labore voluptatem, odio ratione adipisci libero dicta numquam quibusdam ea autem ducimus alias cumque
-        voluptatibus obcaecati recusandae reprehenderit fuga quod quia nobis! Vel quidem eveniet sit distinctio maxime
-        iste enim nesciunt eos accusantium hic laudantium quibusdam harum voluptates mollitia, dolorum deleniti sunt ea
-        nobis ducimus nulla ullam ad quos sed neque. Molestiae, non. Suscipit explicabo consequatur, dolor, ipsa soluta
-        voluptas eveniet molestiae id architecto, consequuntur sequi officia in culpa. Quos, voluptates!
-    </p>
+    <div>
+        <ul>
+            <li>coffee</li>
+            <li>tea</li>
+            <li>orange juice</li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet <a href="">LINK</a> consectetur adipisicing elit. Atque, recusandae itaque
+            asperiores minus
+            repudiandae,
+            enim est totam dicta blanditiis ipsa libero dignissimos soluta quae consequuntur quam iure inventore.
+            Tempora
+            labore voluptatem, odio ratione adipisci libero dicta numquam quibusdam ea autem ducimus alias cumque
+            voluptatibus <span class="selected-text">obcaecati recusandae reprehenderit</span> fuga quod quia nobis! Vel
+            quidem eveniet sit
+            distinctio maxime
+            iste enim nesciunt eos accusantium hic laudantium quibusdam harum voluptates mollitia, dolorum deleniti sunt
+            ea
+            nobis ducimus nulla ullam ad quos sed neque. Molestiae, non. Suscipit explicabo consequatur, dolor, ipsa
+            soluta
+            voluptas eveniet molestiae id architecto, consequuntur sequi officia in culpa. Quos, voluptates!
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic blanditiis ratione autem aut quisquam
+            delectus
+            impedit nisi ullam dolores. <span class="selected-text">Deleniti dolorem itaque consectetur!</span> Eveniet
+            quaerat sequi id veniam sint. Ea
+            doloribus tenetur expedita temporibus quae? Unde voluptatem nam veritatis praesentium quaerat ipsa culpa,
+            laboriosam suscipit rerum asperiores nemo fugit?</p>
+    </div>
+
+
+
     <h2>Skills</h2>
     <table>
         <thead>
@@ -34,7 +109,7 @@
         </thead>
         <tr>
             <td><a href="./merunning.html" target="my_skills">Running</a></td>
-            <td>Moderate</td>
+            <td><span class="selected-text">Moderate</span></td>
         </tr>
         <tr>
             <td>Problem solving</td>
