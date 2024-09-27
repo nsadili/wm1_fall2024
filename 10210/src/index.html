@@ -15,19 +15,49 @@
         #biography-heading {
             color: green;
         }
+
+        div.navbar>ul {
+            list-style-type: none;
+            margin: 0;
+            background-color: violet;
+        }
+
+        .navbar li {
+            background-color: aquamarine;
+            display: inline-block;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar a {
+            background-color: blueviolet;
+            display: block;
+            height: 100%;
+        }
+
+        .navbar a:hover {
+            color: brown;
+            font-weight: bold;
+            background-color: black;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="experience.html">Education</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
     <table>
         <tr>
@@ -67,11 +97,17 @@
         <li>2024 Spring ended!</li>
     </ul>
 
-    <img src="https://www.nme.com/wp-content/uploads/2024/09/johnny_depp_new-696x442.jpg" alt="A picture of J.Depp"
-        width="300px">
+    <img style="border-radius: 50%; width: 300px; height: 300px;"
+        src="https://www.nme.com/wp-content/uploads/2024/09/johnny_depp_new-696x442.jpg" alt="A picture of J.Depp">
 
     <h1 class="rest-heading">Dummy text</h1>
 
+
+    <ul>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
 </body>
 
 </html>

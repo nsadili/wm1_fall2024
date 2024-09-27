@@ -24,3 +24,16 @@ p {
 .skills-paragraph {
     font-weight: 600;
 }
+
+/* a {
+    color: blueviolet;
+} */
+
+/* a:visited {
+    color: aqua;
+}
+*/
+
+h2 {
+    font-weight: normal;
+}
