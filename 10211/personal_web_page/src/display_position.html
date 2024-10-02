@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display demo</title>
+
+    <style>
+        body {
+            height: 1000px;
+        }
+
+        p {
+            width: 600px;
+            background-color: aqua;
+        }
+
+        li {
+            width: 300px;
+            background-color: blanchedalmond;
+            margin-top: 5px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: aquamarine;
+            width: 500px;
+            height: 50px;
+            /* visibility: hidden; */
+        }
+
+        span {
+            display: inline-block;
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .mini-container {
+            position: relative;
+        }
+
+        .card {
+            margin: 5px auto;
+            width: 200px;
+            border-radius: 10px;
+            background-color: aqua;
+
+        }
+
+        .card-title {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .card-info {
+            width: 90%;
+            margin: 10px auto 0;
+        }
+
+        .card-info>* {
+            display: inline;
+        }
+
+        .card-title {
+            background-color: brown;
+            position: absolute;
+            /* z-index: -1; */
+            top: 30px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.w3schools.com/css/css_positioning.asp">W3Schools CSS Position</a>
+
+    <img src="https://picsum.photos/100" alt="Random Image from Lorem Picsum">
+
+    <span>This is an inline text</span>
+
+    <ul>
+        <li>Tea</li>
+        <li>Water</li>
+        <li>OrangeJuice</li>
+    </ul>
+
+
+    <p>test</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nulla commodi placeat, deleniti minima soluta
+        quis suscipit nisi ipsam tenetur consequuntur mollitia qui cupiditate asperiores animi dignissimos dicta amet a
+        consectetur sequi quo, ab enim eveniet assumenda! Culpa rem deserunt eligendi odit incidunt officiis provident,
+        voluptatibus, vitae, itaque perspiciatis facilis!</p>
+
+
+    <div class="mini-container">
+        <div class="card">
+            <p class="card-title">Iphone</p>
+            <img class="card-image"
+                src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-13-pro-sierra-blue-back.png?v=a58d97a7"
+                alt="Iphone image">
+            <div class="card-info">
+                <span class="card-info-price">1300AZN</span>
+                <span class="card-info-date">dunen, 20:05</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
