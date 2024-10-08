@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: brown;
+            display: flex;
+            width: 80%;
+            margin: auto;
+            /* gap: 10px; */
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .container>div {
+            min-width: 200px;
+        }
+
+        .div1 {
+            background-color: aqua;
+            width: 300px;
+        }
+
+        .div2 {
+            background-color: orange;
+            width: 300px;
+            order: 4;
+        }
+
+        .div3 {
+            background-color: blue;
+            width: 200px;
+            align-self: flex-end;
+        }
+
+        .div4 {
+            width: 200px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="div1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius molestias, consectetur nam consequatur
+            qui
+            voluptatum magnam at nihil dolores laboriosam odio, id harum perferendis cupiditate libero in asperiores
+            numquam
+            dignissimos? Hic, omnis doloremque rerum inventore illum exercitationem blanditiis praesentium!
+        </div>
+        <div class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat saepe ab itaque facere optio
+            impedit, maxime sed quae, minima et ipsam nemo aperiam repudiandae, enim delectus. Non illum consequuntur
+            sit
+            corrupti? Voluptatem est mollitia molestias eveniet necessitatibus distinctio autem eos vel at. Porro cumque
+            esse nostrum quam nobis pariatur quae!</div>
+
+        <div class="div3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, quos.</div>
+
+        <div class="div4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, quo sint. Consequatur fuga
+            doloremque
+            voluptates temporibus ad, quibusdam necessitatibus officiis cupiditate, saepe quas qui porro aut repellat
+            amet
+            aperiam autem!</div>
+    </div>
+
+
+</body>
+
+</html>
