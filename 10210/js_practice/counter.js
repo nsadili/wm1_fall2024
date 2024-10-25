@@ -1,35 +1,33 @@
-let counterValue = 0;
-const counterEl = document.getElementById('counter');
-counterEl.readOnly = true;
-counterEl.value = counterValue;
 
-// document.getElementById('btnInc').onclick = handleBtnClick;
-// document.getElementById('btnInc').onclick = anotherHandler;
-document.getElementById('btnInc').addEventListener('click', handleBtnClick);
-document.getElementById('btnInc').addEventListener('click', anotherHandler);
+let buttons = document.getElementsByTagName('button');
+//let buttons = document.querySelectorAll('button');
 
-
-setTimeout(() => {
-    document.getElementById('btnInc').removeEventListener('click', anotherHandler);
-}, 2000);
-
-// function () {
-//     counterEl.value = ++counterValue;
+// for (let i = 0; i < buttons.length; i++) {
+//     console.log(buttons[i]);
 // }
 
-document.getElementById('btnDec').onclick = handleBtnClick;
-// function () {
-//     counterEl.value = --counterValue;
-// }
-
-document.getElementById('btnRes').onclick = handleBtnClick;
-// () => counterEl.value = counterValue = 0;
-
-function anotherHandler() {
-    console.log("Another handler executed!")
+for (let btn of buttons) {
+    // btn.onclick = handleCalcEvent;
+    btn.addEventListener('click', handleCalcEvent);
 }
 
-function handleBtnClick(event) {
+document.getElementById('btnInc').addEventListener('click', additionTask)
+
+setTimeout(() => {
+    document.getElementById('btnInc').removeEventListener('click', additionTask)
+}, 3000);
+
+function additionTask() {
+    console.log("btnInc clicked")
+}
+
+const counterEl = document.getElementById('counter');
+counterEl.readOnly = true;
+let counterValue = 10;
+counterEl.value = counterValue;
+
+
+function handleCalcEvent(event) {
     switch (event.target.id) {
         case 'btnInc':
             counterEl.value = ++counterValue;
@@ -43,22 +41,24 @@ function handleBtnClick(event) {
     }
 }
 
+let movieNames = ['Interstellar', 'Fight Club', 'Inception', 'John Wick', 'Titanic'];
+const favMoviesEl = document.getElementById('favMovieList');
 
-//////////////////////////////////////////////////////////
+// let elementText = '';
+// for (let movieName of movieNames) {
+//     elementText += `<li>${movieName}</li>`;
+// }
+// favMoviesEl.innerHTML = elementText;
 
-const favMovieNames = ['Fight Club', 'Se7en', 'Green Book', 'Catch me if you can', 'Inseption']
-const movieListEl = document.getElementById('movieList');
+for (let movieName of movieNames) {
+    let movieLi = document.createElement('li');
 
-let newLi;
-for (let movieName of favMovieNames) {
-    newLi = document.createElement('li');
-    // newLi.innerHTML = movieName;
-    newLi.appendChild(document.createTextNode(movieName));
-    newLi.addEventListener('click', handleLiClick);
+    movieLi.addEventListener('click', handleSelectMovie);
 
-    movieListEl.prepend(newLi);
+    movieLi.appendChild(document.createTextNode(movieName));
+    favMoviesEl.prepend(movieLi);
 }
 
-function handleLiClick(event) {
-    event.target.classList.toggle('selected-li');
+function handleSelectMovie(event) {
+    event.target.classList.toggle('selected-text');
 }

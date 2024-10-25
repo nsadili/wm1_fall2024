@@ -1,4 +1,5 @@
-.selected-li {
+.selected-text {
     color: red;
+    font-size: .8em;
     text-decoration: line-through;
 }
